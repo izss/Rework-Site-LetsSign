@@ -1,0 +1,152 @@
+/* Importando a fonte caso necessário */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D1117;
+}
+
+.container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: #0D1117;
+}
+
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    width: 80%;
+    opacity: 0.3;
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 80%;
+    padding: 20px;
+    background-color: #161B22;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.checkmark {
+    color: #3BA9FC;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #fff;
+    padding: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.forgot-password {
+    color: #ccc;
+    font-size: 12px;
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+    color: #fff;
+}
+
+.login-btn {
+    background-color: #00C2FF;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover{
+
+    background-color: whitesmoke;
+
+}
+
+
+
+.register-btn {
+    background: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.register-btn:hover {
+    background-color: whitesmoke;
+    color: #000
+    
+}
+
+.privacy-policy {
+    display: block;
+    color: #777;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.privacy-policy:hover {
+    color: #fff;
+}

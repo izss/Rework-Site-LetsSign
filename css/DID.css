@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #12181f;
+    color: white;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 220px;
+    padding: 30px 20px;
+    border-right: 1px solid #2b2f36;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.logo .check {
+    color: #42caff;
+    margin-left: 5px;
+}
+
+.steps {
+    position: relative;
+    padding-left: 20px;
+    border-left: 1px solid #42caff;
+}
+
+.steps a {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    color: #42caff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.steps a::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #12181f;
+    border: 3px solid #42caff;
+    transition: background-color 0.3s;
+}
+
+.steps a:hover::before {
+    background-color: #42caff;
+}
+
+.steps a:hover {
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+.steps a.active::before {
+    background-color: #42caff;
+}
+
+
+.content {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.content h2 {
+    color: #42caff;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #058bb3;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.photo-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.letsign-logo {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.letsign-logo .check {
+    color: #42caff;
+}
+
+.reminder {
+    background-color: #1e252c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2b2f36;
+    max-width: 600px;
+}
+
+.reminder .label {
+    font-weight: bold;
+    color: #42caff;
+    margin-bottom: 10px;
+}
+
+.timer-container {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-ring {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+.timer-ring svg {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.timer-ring circle {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+circle.bg {
+    stroke: #2b2f36;
+}
+
+circle.progress {
+    stroke: #ffffff;
+    stroke-dasharray: 282.6;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.timer-text span {
+    font-size: 24px;
+    font-weight: bold;
+}
