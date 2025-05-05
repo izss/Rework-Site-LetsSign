@@ -1,9 +1,9 @@
-const TOTAL_TIME = 25 * 60 + 15; 
+const TOTAL_TIME = 25 * 60 + 15;
 let timeLeft = TOTAL_TIME;
 
 const timerDisplay = document.getElementById('timer');
 const progressCircle = document.querySelector('circle.progress');
-const totalLength = 2 * Math.PI * 45; 
+const totalLength = 2 * Math.PI * 45;
 
 function updateTimer() {
     const minutes = Math.floor(timeLeft / 60);
