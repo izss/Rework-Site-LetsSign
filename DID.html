@@ -9,9 +9,25 @@
 </head>
 
 <body>
+    <!-- Timer fixado como widget -->
+    <div class="timer-widget">
+        <div class="timer-ring">
+            <svg viewBox="0 0 100 100">
+                <circle class="bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress" cx="50" cy="50" r="45"></circle>
+            </svg>
+            <div class="timer-text">
+                <p>Tempo até expirar</p>
+                <span id="timer"></span>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <aside class="sidebar">
-            <h1 class="logo">LetsSign<span class="check">✔</span></h1>
+            <h1 class="logo">
+                <img src="/images/LogoBranco.svg" alt="LetsSign Logo" class="logo-img">
+            </h1>
             <nav class="steps">
                 <a href="/face_ID.html">Verificação Facial</a>
                 <a href="#verificacao-digital">Verificação Digital</a>
@@ -30,7 +46,9 @@
                     <p><strong>Usuário id:</strong> #00001</p>
                     <p><strong>Nome:</strong> Lia Cruz da Silva</p>
                     <p><strong>ID blockchain n°</strong> 4b8e0a6f9c72d1f8e3ab97cf4f</p>
-                    <div class="letsign-logo">LetsSign<span class="check">✔</span></div>
+                    <h1 class="logo">
+                        <img src="/images/LogoBranco.svg" alt="LetsSign Logo" class="logo-img">
+                    </h1>
                 </div>
             </div>
 
@@ -40,19 +58,6 @@
                     com ninguém.</p>
             </div>
         </main>
-
-        <div class="timer-container">
-            <div class="timer-ring">
-                <svg viewBox="0 0 100 100">
-                    <circle class="bg" cx="50" cy="50" r="45"></circle>
-                    <circle class="progress" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <div class="timer-text">
-                    <p>Tempo até expirar</p>
-                    <span id="timer"></span>
-                </div>
-            </div>
-        </div>
     </div>
 
     <script src="script.js"></script>
