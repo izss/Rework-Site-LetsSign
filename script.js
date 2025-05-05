@@ -1,4 +1,4 @@
-const TOTAL_TIME = 25 * 60 + 15;
+const TOTAL_TIME = 30 * 60 ;
 let timeLeft = TOTAL_TIME;
 
 const timerDisplay = document.getElementById('timer');

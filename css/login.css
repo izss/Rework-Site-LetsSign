@@ -26,15 +26,15 @@ body {
 
 
 .left {
-    width: 50%;
+    width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .background-image {
-    width: 80%;
-    opacity: 0.3;
+    width: 800px;
+    opacity:0.3;
 }
 
 
