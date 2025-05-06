@@ -37,7 +37,7 @@
   }
   
   .logo {
-    width: 120px;
+    width: 250px;
     display: block;
     margin: 0 auto 20px;
   }
@@ -55,7 +55,7 @@
   input[type="tel"] {
     width: 100%;
     padding: 10px;
-    margin-top: 6px;
+    margin-top: 8px;
     border: none;
     border-bottom: 1px solid #ccc;
     background: transparent;
@@ -84,20 +84,44 @@
     color: #00d1ff;
     text-decoration: none;
   }
-  
-  .botao {
+
+  .botao-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+      
+  a.botao {
+    display: block;
     width: 100%;
+    text-align: center;
     background-color: #00d1ff;
     color: black;
-    border: none;
+    text-decoration: none;
     padding: 12px;
     border-radius: 6px;
-    cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin-top: 10px;
   }
   
+  a.botao:hover {
+    background-color: #00b8e0;
+  }
+  
+
+a.botao:hover {
+  background-color: #00b8e0;
+}
+
   .botao:hover {
     background-color: #00b8e0;
   }
@@ -127,7 +151,6 @@
     text-decoration: none;
   }
   
-  /* RESPONSIVO */
   @media (max-width: 600px) {
     .form-box {
       padding: 1.5rem;
